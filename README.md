@@ -42,6 +42,7 @@ Link: https://www.nature.com/articles/s41586-019-1238-8
 ### Quality Assessment Example
 FastQC Files were created for each sample in order to view the quality of the samples.
 These two images are some of the data that is reported about the samples.
+
 ![](https://i.imgur.com/WNcmnJ0.png)
 ![](https://i.imgur.com/lxjxQkD.png)
 
@@ -50,10 +51,12 @@ Sourmash Gather is useful to give some hints as to what microbes may be present 
 
 CSM7KOJE Raw Sample
 `sourmash gather --num-results 10 CSM7KOJE.raw.sig ~/2020-NSURP/databases/genbank-k31.sbt.zip`
+
 ![](https://i.imgur.com/XxKlXtl.png)
 
 CSM7KOJE Kmer Trimmed Sample
 `sourmash gather --num-results 10 CSM7KOJE.trim.sig ~/2020-NSURP/databases/genbank-k31.sbt.zip`
+
 ![](https://i.imgur.com/WX9a0wU.png)
 
 * query would be the signature of the sample being compared to the database (CSM7KOJE)
@@ -99,6 +102,7 @@ This heatmap is used to visualize the similarity between the samples. The heatma
 
 2. Plot 
 ![](https://i.imgur.com/JC6c4zR.png)
+
 This MDS plot was created using an R script and the more clustered samples have more in common than those far apart.
 
 ## Summary
